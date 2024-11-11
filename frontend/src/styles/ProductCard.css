@@ -1,0 +1,103 @@
+/* ProductCard.css */
+
+/* Style for the overall card container */
+article {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  article:hover {
+    transform: translateY(-4px);  /* Card will move up when hovered */
+  }
+  
+  /* Disable hover effect when modal is open */
+  article.no-hover {
+    transform: none; /* Disable hover transform */
+  }
+  /* Style for the product image */
+  article img {
+    border-radius: 8px;
+    margin-right: 1rem;
+    object-fit: cover;
+  }
+  
+  /* Container for the product details */
+  article div {
+    flex: 1;
+  }
+  
+  /* Product name style */
+  article h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Product price style */
+  article p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Container for the action buttons */
+  .buttons {
+    display: flex;
+    gap: 2rem;
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Style for the individual buttons */
+  .buttons button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  .buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Delete button with a red color */
+  .buttons button[aria-label="Delete Product"] {
+    background-color: #dc3545;
+  }
+  
+  .buttons button[aria-label="Delete Product"]:hover {
+    background-color: #b02a37;
+  }
+  /* Default (Light Mode) */
+article {
+  background-color: white;
+  color: black;
+}
+
+button {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+/* Dark Mode Styles */
+body.dark article {
+  background-color: #333;
+  color: white;
+}
+
+body.dark button {
+  background-color: #444;
+  color: white;
+}

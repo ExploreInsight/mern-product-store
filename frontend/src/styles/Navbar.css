@@ -1,0 +1,83 @@
+/* Container for the entire navbar */
+.nav-container {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center; /* Centers the nav within the header */
+}
+
+/* Navbar styling */
+.nav {
+  width: 100%;
+  max-width: 1200px; /* Optional: Set max-width for a more controlled layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo styling to position on the far left */
+.logo-btn {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  
+}
+
+.logo-btn a {
+  text-decoration: none;
+  color: #333;
+  background-image: linear-gradient(to right, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.logo-btn a:hover{
+  filter: contrast(5)
+}
+/* Button container to position on the far right */
+.nav-btn {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+/* Styling for the individual buttons */
+.add-btn,
+.toggle-btn {
+  margin-left: 15px;
+  color: #fff;
+}
+
+.add-btn a,
+.toggle-btn span {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #00c6ff, #0072ff); /* Sky blue gradient */
+  -webkit-background-clip: text; /* Clips the background to the text */
+  color: #057deea9; /* Base color of the icon to match the gradient */
+ 
+}
+
+/* Hover effect for icons */
+.add-btn a:hover,
+.toggle-btn span:hover {
+  filter: brightness(1.9);
+}
+
+/* Dark mode styling for the body */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .nav-container {
+  background-color: #444;
+}
+
+body.dark-mode .toggle-btn span{
+  color: rgb(204, 191, 14);
+}

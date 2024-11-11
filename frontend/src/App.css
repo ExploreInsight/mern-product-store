@@ -1,0 +1,112 @@
+/* App.css */
+
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
+  }
+  
+  /* Layout Container */
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Navbar Styles */
+  .nav-container {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Main Content Area */
+  main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Toast Notification Positioning */
+  .Toastify__toast-container {
+    width: auto !important;
+  }
+  
+  /* Link Styling */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Not Found Page Styling */
+  h1 {
+    color: #ff4d4f;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  /* global.css */
+
+/* Default light mode styles */
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Dark Mode Styles */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.container.dark {
+  background-color: #333;
+  color: #ffffff;
+}
+
+/* Default (Light Mode) */
+label {
+  color: #000; /* Default label color */
+}
+
+/* Dark Mode Styles */
+body.dark label {
+  color: white; /* Make label text white when dark mode is on */
+}
+
+/* Optionally, ensure input elements are visible too */
+body.dark input {
+  background-color: #444; /* Dark input background */
+  color: white; /* Text color for input fields */
+}
